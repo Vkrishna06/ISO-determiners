@@ -38,7 +38,7 @@ Sprint 3 – Algorithm Development & Testing
 Sprint 4 – Results, Visualization & Validation
 Sprint 5 – Final Report & Presentation
 
-References
+References:
 Select Committee on the CCP: https://selectcommitteeontheccp.house.gov/
 TraCCC Research: https://traccc.gmu.edu/
 CDC Reports on Fentanyl: https://blogs.cdc.gov/nchs/2023/05/03/7338/
