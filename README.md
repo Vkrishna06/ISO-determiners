@@ -8,12 +8,12 @@ Overview:
 - The team will implement an ISO Determination Engine using predefined conditions and rules.
 
 Team Members:
-Bhargav Dasari
-Sagarika Komati Reddy
-Venkata Krishna Kothapalli
-Kamani Madasu
-Uday Madivada
-Suparna Mannava
+- Bhargav Dasari
+- Sagarika Komati Reddy
+- Venkata Krishna Kothapalli
+- Kamani Madasu
+- Uday Madivada
+- Suparna Mannava
 
 Problem Statement:
 - The illicit fentanyl epidemic resulted in 112,000+ deaths in the US in 2023.
