@@ -3,9 +3,7 @@
 Project Title: ISO Determiners – Automating Illicit Activity Detection
 
 Overview:
-- This project aims to automate and standardize the process of determining illicit synthetic opioid (ISO) activity.
-- It builds upon previous semesters’ research and leverages algorithms for decision-making.
-- The team will implement an ISO Determination Engine using predefined conditions and rules.
+The Illicit Synthetic Opioid (ISO) Determination Engine is a semi-automated platform designed to detect and assess entities at high risk of involvement in fentanyl precursor chemical trafficking. Leveraging machine learning, natural language processing (NLP), and data analytics, the system assigns risk scores to companies based on structured intelligence. This methodology strengthens law enforcement’s ability to monitor and disrupt illicit supply chains, thereby limiting the proliferation of synthetic opioids.
 
 Team Members:
 - Bhargav Dasari
@@ -16,27 +14,41 @@ Team Members:
 - Suparna Mannava
 
 Problem Statement:
-- The illicit fentanyl epidemic resulted in 112,000+ deaths in the US in 2023.
-- Prior research identified decision-making criteria for ISO activity, but automation is required for scalable detection.
-- The project's goal is to automate ISO determination based on structured datasets and predefined rules.
+Fentanyl trafficking has become a critical issue, contributing to over 70,000 overdose deaths annually in the U.S. The global fentanyl supply chain operates through legal businesses that often redirect chemicals into illicit markets. Current tracking methods lack automation, creating inefficiencies in intelligence gathering and risk assessment.
+
+This project addresses the need for a data-driven approach to identifying and prioritizing high-risk companies and chemicals linked to fentanyl production. By implementing a structured, analytical framework, law enforcement can more effectively disrupt illicit supply networks.
+
 
 Solution Approach:
-- Big Data Processing: Normalize and integrate publicly available information (PAI) into a structured dataset.
-- Machine Learning/NLP: Enhance detection capabilities through entity recognition and classification models.
-- Automation: Develop an ISO Determination Engine that applies predefined rules to identify illicit activity.
-- Evidence Chain Tracking: clear and detailed record of all data changes, sources, and processing steps. This helps ensure that the data is reliable, can be traced back to its origin, and can be checked or reproduced if needed.
+The project develops a semi-automated risk assessment system that:
+- Uses structured intelligence to log and trace key events (e.g., sanctions, indictments, and financial crimes).
+- Implements a weighted scoring model to assess the risk level of entities based on various indicators.
+- Provides interactive visualizations and dashboards for regulatory agencies to monitor illicit activities.
+- Integrates supervised machine learning and anomaly detection to flag suspicious transactions.
+- Enhances data collection through NLP-based entity recognition to extract information from legal reports and sanctions lists.
 
 Datasets Used:
-- TraCCC Data: Contains information on fentanyl-related entities.
-- Public Data Sources: Information from corporate registries, web scraping, and open databases.
-- Chemical Identification Registries: CAS numbers, DEA surveillance lists.
+- USDOJ Indictments: Tracks legal actions against fentanyl precursor manufacturers.  
+- OFAC Sanctions Database: Identifies sanctioned companies and individuals linked to illicit activity.
+- Fentanyl Precursor Chemical Database: Contains details on chemicals used in fentanyl production.
+- Integrated Data & Evidence Collection: Links company profiles to sanctions, legal cases, and financial activities.
+- DEA Special Surveillance Lists (DEA SLLs): Used to weigh chemical risks for enforcement actions.
+
+Risk Scoring Model:
+
+The weighted scoring model assesses risk based on three key factors:
+
+- Sanctions & Indictments (S): Legal actions taken against a company.
+- Government Subsidies (G): Financial support or policies aiding illicit activities.
+- Complicity Indicators (C): Business behaviors that suggest involvement in illegal supply chains.
 
 Project Timeline:
-- Sprint 1 – Problem Definition & Requirements Gathering
-- Sprint 2 – Data Collection & Preprocessing
-- Sprint 3 – Algorithm Development & Testing
-- Sprint 4 – Results, Visualization & Validation
-- Sprint 5 – Final Report & Presentation
+- Sprint 1 -- Define project scope & collect initial datasets --  Completed
+- Sprint 2 -- Develop risk scoring algorithm & refine data structures -- Completed
+- Sprint 3 -- Implement UI prototype & integrate NLP tools -- Completed
+- Sprint 4 -- Final testing, validation, and partner feedback -- Upcoming
+- Sprint 5 -- Complete documentation and submit findings -- Pending
+
 
 References:
 - Select Committee on the CCP: https://selectcommitteeontheccp.house.gov/
