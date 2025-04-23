@@ -1,6 +1,8 @@
 # ISO-determiners
 
-Project Title: ISO Determiners – Automating Illicit Activity Detection
+Project Title: ISO Determiners - Semi-automated determination system for illicit synthetic opioid tracking
+
+This project aims to provide regulatory bodies and law enforcement with an evidence-based, transparent, and tunable platform to rank entities involved in synthetic opioid (ISO) supply chains, using a combination of NLP, manual tagging, and a weighted risk model.
 
 Team Members:
 
@@ -17,101 +19,83 @@ The ISO Determination Engine is a semi-automated system designed to detect and p
 
 Problem Statement:
 
-Fentanyl trafficking has become a critical issue, contributing to over 70,000 overdose deaths annually in the U.S. The global fentanyl supply chain operates through legal businesses that often redirect chemicals into illicit markets. Current tracking methods lack automation, creating inefficiencies in intelligence gathering and risk assessment.
-
-This project addresses the need for a data-driven approach to identifying and prioritizing high-risk companies and chemicals linked to fentanyl production. By implementing a structured, analytical framework, law enforcement can more effectively disrupt illicit supply networks.
+The opioid crisis, particularly involving fentanyl and its precursors, continues to devastate public health systems, with over 70,000 annual overdose deaths in the U.S. alone. A significant portion of fentanyl trafficking is enabled by legal businesses that mask illicit chemical redirection. Current tools lack automation, evidence traceability, and risk prioritization capabilities.
 
 
 Solution Approach:
 
-The project develops a semi-automated risk assessment system that:
-- Uses structured intelligence to log and trace key events (e.g., sanctions, indictments, and financial crimes).
-- Implements a weighted scoring model to assess the risk level of entities based on various indicators.
-- Provides interactive visualizations and dashboards for regulatory agencies to monitor illicit activities.
-- Integrates supervised machine learning and anomaly detection to flag suspicious transactions.
-- Enhances data collection through NLP-based entity recognition to extract information from legal reports and sanctions lists.
+The ISO Determination Engine is a semi-automated system that combines natural language processing (NLP), entity recognition, manual tagging, and risk scoring to evaluate the potential complicity of companies and chemicals involved in fentanyl production.
 
-Key Features:
+The system is structured as a modular pipeline:
 
-Weighted Risk Scoring Engine
-Calculates total risk scores for chemical-company pairs using a configurable formula:
-Total Score = (Sanctions × w1) + (Subsidies × w2) + (Complicity × w3)
+1. Document Ingestion - Intake of press releases, sanction lists, court records
+2. Entity Recognition - Extraction of chemical names and company aliases
+3. Evidence Tagging - Manual and NLP-assisted tagging of key phrases
+4. Scoring Model - Weighted scoring using configurable formulas
+5. Interactive Dashboard - Dynamic view of scores, sources, and trends
+6. Clustering Analysis - Unsupervised learning to find suspicious networks
 
-Default weights:
+This structured approach allows law enforcement and analysts to:
+- Prioritize entities based on behavior-linked risk
+- Adjust model weights to reflect enforcement needs
+- Track every risk score back to supporting evidence
 
-Sanctions (w1) = 1.2
-Government Subsidies (w2) = 1.1
-Complicity Indicators (w3) = 1.3
 
-Manual Tagging Interface:
-Allows manual tagging and classification of evidence related to company behavior, government funding, and legal violations.
+6.Datasets Used
 
-Evidence Traceability:
-Every risk score is backed by evidence from DOJ press releases, OFAC sanctions, PACER court records, and DEA databases.
+|          Dataset          |    Source    |                       Description                           |
+|---------------------------|--------------|-------------------------------------------------------------|
+|        DOJ Indictments    |     USDOJ    | Press releases and case details of fentanyl-related charges |
+|          DEA SSL          |      DEA     |           List of scheduled precursor chemicals             |
+|  Company Reference Sheet  |    Curated   |     PRC-linked companies, aliases, sanctions, subsidies     |
+| Fentanyl Precursors Table | Academic/DEA |               CAS numbers, synonyms, weights                |
 
-Interactive Dashboard (Streamlit):
-- Displays risk scores and entity breakdowns  
-- Allows dynamic adjustment of scoring weights**  
-- Supports search, filtering, and export options
 
-Clustering Analysis:
-K-means unsupervised models detect hidden networks or suspicious clusters of fentanyl suppliers.
+7. Weighted Scoring Model
 
-System Architecture:
+Risk Scoring Model
 
-Data Sources ➜ Intake Log ➜ NLP/Tagging ➜ Sub-score Assignment ➜ Weighted Scoring ➜ Dashboard Output
+The total risk score for each company is calculated using:
 
-- Evidence Collection: From DOJ, OFAC, DEA, CBP, PACER
-- Pipeline: Identifies and extracts entity names (chemicals/companies)
-- Scoring Engine: Assigns scores and ranks risk levels
-- Dashboard: Filter, compare, and export outputs
+Total Score = (Sanctions × 1.2) + (Subsidies × 1.1) + (Complicity × 1.3)
 
-Datasets Used:
+|    Component   |                    Description                    | Weight |
+|----------------|---------------------------------------------------|--------|
+|  Sanctions (S) |       Legal actions taken against the entity      |   1.2  |
+|  Subsidies (G) | Government support potentially enabling ISO trade |   1.1  |
+| Complicity (C) |      Behavioral or circumstantial involvement     |   1.3  |
 
-- USDOJ Fentanyl Precursor Indictments
-Court filings, case numbers, indictment press releases
+Weights are configurable from the Streamlit UI.
 
-- DEA Special Surveillance List (SSL)
-List of precursor chemicals relevant to fentanyl production
 
-- Integrated Company Reference Sheet
-Company aliases, PRC-linked funding, risk indicators
+8.Key Features:
 
-- Fentanyl Precursors Chemical Table
-CAS numbers, synonyms, substance weights
+- Risk Scoring Engine - Customizable and auditable scoring for each entity.
+- Evidence Tagging - Manual/NLP-assisted tagging of sanctions, subsidies, and complicity evidence.
+- Entity Recognition - NLP pipeline for extracting companies and chemical names.
+- Interactive Dashboard - View and adjust risk scores, export results, and filter by tags.
+- Clustering Analysis - K-means clustering to identify hidden networks.
 
-Risk Scoring Model:
-
-The weighted scoring model assesses risk based on three key factors:
-
-- Sanctions & Indictments (S): Legal actions taken against a company.
-- Government Subsidies (G): Financial support or policies aiding illicit activities.
-- Complicity Indicators (C): Business behaviors that suggest involvement in illegal supply chains.
-
-  These are scored and combined using:
-Total Score = (S × 1.2) + (G × 1.1) + (C × 1.3)
-
-Key Findings:
-
-- Majority of flagged companies are based in China and Mexico.
-- Complicity indicators were stronger predictors than sanctions alone.
-- The model is flexible and tunable, allowing adjustments for different enforcement priorities.
-- Manual tagging ensures high precision**, critical for sensitive topics.
-- All scores are backed by evidence, enhancing auditability and trust.
 
 Project Timeline:
 
-- Sprint 1 -- Define project scope & collect initial datasets --  Completed
-- Sprint 2 -- Develop risk scoring algorithm & refine data structures -- Completed
-- Sprint 3 -- Implement UI prototype & integrate NLP tools -- Completed
-- Sprint 4 -- Final testing, validation, and partner feedback -- Upcoming
-- Sprint 5 -- Complete documentation and submit findings -- Pending
+
+| Sprint |            Objectives           |   Status   |
+|--------|---------------------------------|------------|
+|    1   | Define scope, collect datasets  |  Completed |
+|    2   | Build risk model, design schema |  Completed |
+|    3   |    Develop UI, integrate NLP    |  Completed |
+|    4   |  Testing, feedback, validation  |  Completed |
+|    5   | Finalize documentation & report |   Ongoing  |
 
 
-References:
-- Select Committee on the CCP: https://selectcommitteeontheccp.house.gov/
-- TraCCC Research: https://traccc.gmu.edu/
-- CDC Reports on Fentanyl: https://blogs.cdc.gov/nchs/2023/05/03/7338/
+
+## References
+
+- [Select Committee on the CCP](https://selectcommitteeontheccp.house.gov/)
+- [TraCCC Research](https://traccc.gmu.edu/)
+- [CDC Report on Fentanyl](https://blogs.cdc.gov/nchs/2023/05/03/7338/)
+
 
 
 
