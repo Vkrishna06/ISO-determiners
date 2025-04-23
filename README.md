@@ -1,10 +1,10 @@
 # ISO-determiners
 
-Project Title: ISO Determiners - Semi-automated determination system for illicit synthetic opioid tracking
+1.Project Title: ISO Determiners - Semi-automated determination system for illicit synthetic opioid tracking
 
 This project aims to provide regulatory bodies and law enforcement with an evidence-based, transparent, and tunable platform to rank entities involved in synthetic opioid (ISO) supply chains, using a combination of NLP, manual tagging, and a weighted risk model.
 
-Team Members:
+2.Team Members:
 
 - Bhargav Dasari
 - Sagarika Komati Reddy
@@ -13,16 +13,16 @@ Team Members:
 - Uday Madivada
 - Suparna Mannava 
 
-Overview:
+3.Overview:
 
 The ISO Determination Engine is a semi-automated system designed to detect and prioritize risks related to illicit synthetic opioid (ISO) activities. Built by the Team ISO Determiners as part of the Spring 2025 capstone project at George Mason University (DAEN-690), this tool focuses on ranking high-risk companies and fentanyl precursor chemicals using a weighted scoring model informed by real-world evidence.
 
-Problem Statement:
+4.Problem Statement:
 
 The opioid crisis, particularly involving fentanyl and its precursors, continues to devastate public health systems, with over 70,000 annual overdose deaths in the U.S. alone. A significant portion of fentanyl trafficking is enabled by legal businesses that mask illicit chemical redirection. Current tools lack automation, evidence traceability, and risk prioritization capabilities.
 
 
-Solution Approach:
+5.Solution Approach:
 
 The ISO Determination Engine is a semi-automated system that combines natural language processing (NLP), entity recognition, manual tagging, and risk scoring to evaluate the potential complicity of companies and chemicals involved in fentanyl production.
 
