@@ -2,7 +2,7 @@
 
 1.Project Title: ISO Determiners - Semi-automated determination system for illicit synthetic opioid tracking
 
-This project aims to provide regulatory bodies and law enforcement with an evidence-based, transparent, and tunable platform to rank entities involved in synthetic opioid (ISO) supply chains, using a combination of NLP, manual tagging, and a weighted risk model.
+This project, developed as part of the DAEN-690 Capstone at George Mason University (Spring 2025), aims to provide regulatory agencies and law enforcement with a transparent, evidence-backed, and tunable platform to monitor and prioritize high-risk entities in the synthetic opioid (ISO) supply chain.
 
 2.Team Members:
 
@@ -15,12 +15,25 @@ This project aims to provide regulatory bodies and law enforcement with an evide
 
 3.Overview:
 
-The ISO Determination Engine is a semi-automated system designed to detect and prioritize risks related to illicit synthetic opioid (ISO) activities. Built by the Team ISO Determiners as part of the Spring 2025 capstone project at George Mason University (DAEN-690), this tool focuses on ranking high-risk companies and fentanyl precursor chemicals using a weighted scoring model informed by real-world evidence.
+The ISO Determination Engine is a semi-automated framework that prioritizes entities involved in illicit synthetic opioid (ISO) activity. The system leverages structured evidence, Natural Language Processing (NLP), and risk scoring models to identify suspicious companies associated with fentanyl trafficking.
+
+It helps investigators by providing:
+
+- Easy-to-follow and adjustable risk scoring tools.
+- A central place to tag supporting evidence.
+- Tools to automatically find names of people, companies, and chemicals in text.
+- Dashboards that show live updates and insights.
 
 4.Problem Statement:
 
-The opioid crisis, particularly involving fentanyl and its precursors, continues to devastate public health systems, with over 70,000 annual overdose deaths in the U.S. alone. A significant portion of fentanyl trafficking is enabled by legal businesses that mask illicit chemical redirection. Current tools lack automation, evidence traceability, and risk prioritization capabilities.
+The opioid epidemic, driven largely by synthetic opioids like fentanyl, claims over 70,000 lives each year in the U.S. The fentanyl supply chain often operates under the guise of legitimate businesses—making it hard for enforcement agencies to distinguish illicit actors.
 
+Existing tools lack:
+- Automation
+- Evidence traceability
+- Configurable risk models
+
+Our project addresses this by building a dynamic, data-driven system that adapts as new information becomes available.
 
 5.Solution Approach:
 
@@ -77,7 +90,7 @@ Weights are configurable from the Streamlit UI.
 - Clustering Analysis - K-means clustering to identify hidden networks.
 
 
-Project Timeline:
+9.Project Timeline:
 
 
 | Sprint |            Objectives           |   Status   |
@@ -88,9 +101,14 @@ Project Timeline:
 |    4   |  Testing, feedback, validation  |  Completed |
 |    5   | Finalize documentation & report |   Ongoing  |
 
+10.Limitations & Future Work
+
+- Manual tagging remains labor-intensive. Future versions could enhance NLP confidence thresholds and pre-training.
+- OCR tools like AWS Textract have limitations on PDF formatting—improving these pipelines is key.
+- Future versions could automate tagging pipelines, integrate real-time court record scraping, and increase dashboard interactivity.
 
 
-## References
+References
 
 - [Select Committee on the CCP](https://selectcommitteeontheccp.house.gov/)
 - [TraCCC Research](https://traccc.gmu.edu/)
