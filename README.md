@@ -9,9 +9,9 @@ This project, developed as part of the DAEN-690 Capstone at George Mason Univers
 - Bhargav Dasari
 - Sagarika Komati Reddy
 - Venkata Krishna Kothapalli
-- Kamani Madasu
+- Suparna Mannava
 - Uday Madivada
-- Suparna Mannava 
+- Kamani Madasu 
 
 3.Overview:
 
