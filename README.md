@@ -26,7 +26,7 @@ It helps investigators by providing:
 
 4.Problem Statement:
 
-The opioid epidemic, driven largely by synthetic opioids like fentanyl, claims over 70,000 lives each year in the U.S. The fentanyl supply chain often operates under the guise of legitimate businesses—making it hard for enforcement agencies to distinguish illicit actors.
+The opioid epidemic, driven largely by synthetic opioids like fentanyl, claims over 70,000 lives each year in the U.S. The fentanyl supply chain often operates under the guise of legitimate businesses making it hard for enforcement agencies to distinguish illicit actors.
 
 Existing tools lack:
 - Automation
