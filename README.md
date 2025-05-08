@@ -96,7 +96,7 @@ Weights are configurable from the Streamlit UI.
 |--------|---------------------------------|------------|
 |    1   | Define scope, collect datasets  |  Completed |
 |    2   | Build risk model, design schema |  Completed |
-|    3   |    Develop UI, integrate NLP    |  Completed |
+|    3   |           Develop UI            |  Completed |
 |    4   |  Testing, feedback, validation  |  Completed |
 |    5   | Finalize documentation & report |  Completed |
 
