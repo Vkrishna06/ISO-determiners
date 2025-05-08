@@ -15,7 +15,7 @@ This project, developed as part of the DAEN-690 Capstone at George Mason Univers
 
 3.Overview:
 
-The ISO Determination Engine is a semi-automated framework that prioritizes entities involved in illicit synthetic opioid (ISO) activity. The system leverages structured evidence, Natural Language Processing (NLP), and risk scoring models to identify suspicious companies associated with fentanyl trafficking.
+The ISO Determination Engine is a semi-automated framework that prioritizes entities involved in illicit synthetic opioid (ISO) activity. The system leverages structured evidence and risk scoring models to identify suspicious companies associated with fentanyl trafficking.
 
 It helps investigators by providing:
 
