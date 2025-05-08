@@ -37,13 +37,13 @@ Our project addresses this by building a dynamic, data-driven system that adapts
 
 5.Solution Approach:
 
-The ISO Determination Engine is a semi-automated system that combines natural language processing (NLP), entity recognition, manual tagging, and risk scoring to evaluate the potential complicity of companies and chemicals involved in fentanyl production.
+The ISO Determination Engine is a semi-automated system that combines entity recognition, manual tagging, and risk scoring to evaluate the potential complicity of companies and chemicals involved in fentanyl production.
 
 The system is structured as a modular pipeline:
 
 1. Document Ingestion - Intake of press releases, sanction lists, court records
 2. Entity Recognition - Extraction of chemical names and company aliases
-3. Evidence Tagging - Manual and NLP-assisted tagging of key phrases
+3. Evidence Tagging - Manual tagging of key phrases
 4. Scoring Model - Weighted scoring using configurable formulas
 5. Interactive Dashboard - Dynamic view of scores, sources, and trends
 6. Clustering Analysis - Unsupervised learning to find suspicious networks
