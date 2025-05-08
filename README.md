@@ -103,7 +103,7 @@ Weights are configurable from the Streamlit UI.
 10.Limitations & Future Work
 
 - Manual tagging remains labor-intensive. Future versions could enhance NLP confidence thresholds and pre-training.
-- OCR tools like AWS Textract have limitations on PDF formatting—improving these pipelines is key.
+- OCR tools like AWS Textract have limitations on PDF formatting improving these pipelines is key.
 - Future versions could automate tagging pipelines, integrate real-time court record scraping, and increase dashboard interactivity.
 
 
