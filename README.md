@@ -61,7 +61,6 @@ This structured approach allows law enforcement and analysts to:
 |        DOJ Indictments    |     USDOJ    | Press releases and case details of fentanyl-related charges |
 |          DEA SSL          |      DEA     |           List of scheduled precursor chemicals             |
 |  Company Reference Sheet  |    Curated   |     PRC-linked companies, aliases, sanctions, subsidies     |
-| Fentanyl Precursors Table | Academic/DEA |               CAS numbers, synonyms, weights                |
 
 
 7. Weighted Scoring Model
@@ -99,7 +98,7 @@ Weights are configurable from the Streamlit UI.
 |    2   | Build risk model, design schema |  Completed |
 |    3   |    Develop UI, integrate NLP    |  Completed |
 |    4   |  Testing, feedback, validation  |  Completed |
-|    5   | Finalize documentation & report |   Ongoing  |
+|    5   | Finalize documentation & report |  Completed |
 
 10.Limitations & Future Work
 
