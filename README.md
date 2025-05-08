@@ -83,7 +83,7 @@ Weights are configurable from the Streamlit UI.
 8.Key Features:
 
 - Risk Scoring Engine - Customizable and auditable scoring for each entity.
-- Evidence Tagging - Manual/NLP-assisted tagging of sanctions, subsidies, and complicity evidence.
+- Evidence Tagging - Manual tagging of sanctions, subsidies, and complicity evidence.
 - Entity Recognition - NLP pipeline for extracting companies and chemical names.
 - Interactive Dashboard - View and adjust risk scores, export results, and filter by tags.
 - Clustering Analysis - K-means clustering to identify hidden networks.
